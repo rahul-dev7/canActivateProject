@@ -1,0 +1,15 @@
+<h3>Edit Article</h3>
+<p *ngIf="article">
+    <b>Article Id: {{article.articleId}}</b>
+</p>
+<form [formGroup]="articleForm" (ngSubmit)="onFormSubmit()">inp
+    <p>
+        Title: <input type="text" formControlName="title">
+    </p>
+    <p>
+        Category: <input type="text" formControlName="category">
+    </p>
+    <p>
+        <button type="button">Update</button>
+    </p>
+</form>
